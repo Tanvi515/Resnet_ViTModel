@@ -11,7 +11,7 @@ from data_loader import CustomImageLoader
 # Data generators
 train_gen = CustomImageLoader(train_imgs, train_lbls, IMAGES_FOLDER, batch_size=BATCH_SIZE, img_size=IMG_SIZE)
 val_gen = CustomImageLoader(val_imgs, val_lbls, IMAGES_FOLDER, batch_size=BATCH_SIZE, img_size=IMG_SIZE)
-
+test_gen = CustomImageLoader(test_imgs, test_lbls, images_folder, mode="test")
 # Learning rate decay function
 def decay_lr(epoch, curr_lr):
     if epoch % 10 == 0 and epoch != 0:
