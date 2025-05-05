@@ -46,7 +46,6 @@ drop = Dropout(0.5)(dense_1)
 final_out = Dense(NUM_CLASSES, activation='softmax')(drop)
 
 full_model = Model(inputs=inp, outputs=final_out)
-l
 opt = tf.keras.optimizers.SGD(learning_rate=0.001, momentum=0.9, decay=3e-5)
 full_model.compile(optimizer=opt, loss="categorical_crossentropy", metrics=["accuracy"])
 
