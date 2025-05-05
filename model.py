@@ -1,5 +1,4 @@
 # model.py
-
 import tensorflow as tf
 from tensorflow.keras.applications import ResNet50
 from tensorflow.keras.layers import Dense, Dropout, Reshape, GlobalAveragePooling1D, AveragePooling2D
