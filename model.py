@@ -6,7 +6,6 @@ from tensorflow.keras.layers import Dense, Dropout, Reshape, GlobalAveragePoolin
 from tensorflow.keras.models import Model
 from sklearn.metrics import average_precision_score
 
-l
 class TinyViT(tf.keras.Model):
     def __init__(self, patches, dim, heads, layers, ff_dim, dropout=0.1):
         super(TinyViT, self).__init__()
